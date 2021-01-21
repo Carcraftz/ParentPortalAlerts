@@ -1,9 +1,10 @@
-//web server boilerplate (remove if not hosting on glitch or repl)
 const express = require('express')
 const app = express()
 const port = 3000
+
 app.get('/', (req, res) => res.send('Hello World!'))
-app.listen(port, () => console.log(`Example app listening at ${port}))
+
+app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
 
 const pportal = require("./parentportal")
 const config = require("./config")
@@ -55,6 +56,7 @@ refresh()
 //check on refreshinterval
 setInterval(refresh,config.refreshinterval)
 
+//grab a new login token every 30 minutes
 setInterval(loginbot=>{
   pp.login(config.ppusername, config.pppassword)
 },180000)

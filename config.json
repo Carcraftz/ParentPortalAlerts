@@ -1,0 +1,10 @@
+{
+  "twilliosid":"",
+  "twilliotoken":"",
+  "ppusername":"",
+  "pppassword":"",
+  "smsfrom":"+17322122112",
+  "smsto":"+17399999999",
+  "refreshinterval":90000,
+  "baseurl":"https://whatever.com"
+}

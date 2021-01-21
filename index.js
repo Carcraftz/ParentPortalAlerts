@@ -14,7 +14,7 @@ const authToken = config.twilliotoken;
 const client = require('twilio')(accountSid, authToken);
 let oldgrades = []
 function refresh(){
-    pp.getGrades("106483").then(res => {
+    pp.getGrades(config.studentid).then(res => {
       if (oldgrades.length == 0) {
         oldgrades = res
         
